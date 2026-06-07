@@ -1,0 +1,14 @@
+/**
+ * Format an amount as Tunisian Dinar
+ * Examples: 35 -> "35.00 DT"
+ */
+export function fmt(amount: number): string {
+  return `${amount.toFixed(2)} DT`;
+}
+
+/**
+ * Compact format for large amounts
+ */
+export function fmtCompact(amount: number): string {
+  return `${Math.round(amount)} DT`;
+}
